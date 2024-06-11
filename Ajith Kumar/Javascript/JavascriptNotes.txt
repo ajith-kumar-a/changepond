@@ -1,0 +1,179 @@
+7 / 6 / 2024
+
+Javascript  : - it is use to add functionality and behaviour int0 webapp.
+              - it is interpreted language.
+              - it is loosely typed language.
+
+*There are two ways to use Javascript.  
+    1. Internal JS  : in html file we use script and in that script we write js code.
+    2. External Js  : first we create a seperate js file and that js file we import in html file by using script tag.
+
+*How to display output in JS:
+    1. document.write() : - it will display out on webpage
+    2. window.alert()   : - it will generate one popup and display output in it. it display output in single line
+    3. console.log()    : - it will gives output in browser console or in terminal
+    4. innerHTML(DOM)   : - it allows us to insert data inside an element 
+
+
+==============================================================================================================================================
+
+10 / 6 / 24
+
+-in Javascript window is global object
+-By uwing DOM how to set , get value from element.
+-how to apply style rule to an element by using DOM
+
+
+*Fnction :
+- it is a block of code which is use to perform specific task.
+-it will execute only when we call it.
+
+* There are mainly two types of function.
+    1. Predefine function   : provided by in Javascript
+    2. Userdefine Function  : created by user 
+
+* How to get values from input control
+* how to use onclick event
+
+2009(ECMA script-5 ):
+2015(ECMA script-6 ):
+
+* Data types in Javascript
+
+there are Two Types of Data 
+    1. Premitive datatype : number,String,Boolean,Undefine,null.
+    2.Non-Primitive datatype : array , Object.
+
+
+*ARRAYS :
+- it is use to store multiple values with same datatype in single variable.
+- in arrays values store on index basis.
+- array index always start from zero index.
+- array denoted by square bracket[];
+- we can access array data outside array by writting arrayName[indedNumber]
+
+*Length of Array : total number of values available in it.
+    syntax : arrayName.Length
+
+*array size : total number of index 
+    syntax : arrayName.length-1;
+
+*Array Method
+
+*Object data type :
+    - it is use to store multiple values with different datatype in single variable
+    - in object data store in key and value pair formate.
+    - we can access object data outside for that we write object.KeyName.
+    - object denoted by {}
+
+*How to change object data;
+*Array of Object
+*How to display array of object data
+
+*Callback function : Passing one function as an argument inside another is called CallBack Function
+
+*SetTimeout method : it will call another method only once after particular time interval
+        - it takes two parameter 
+                1. Callback function
+                2. time in millisecond
+
+
+*setInterval method : it will call another method multiple time after particular time interval.
+      - it takes two parameter 
+                1. Callback function
+                2. time in millisecond
+
+*Date and its Method
+    - if you want to get date and time in web page by using Javascript for that first we have create objectc of date call
+    - syntax : let dataObj = new Date()
+    IN Javascript date class return current browser date and time 
+
+    how to create digital clock
+
+step 2 
+step 3 : open terminal with option gitbash
+step 4 : in terminal write 
+        git init
+step 5 : congigure remote repository with local repository  
+
+=========================================================================================================================
+
+11 / 6 /24
+
+*Exponentiation operator : it will return power of any number.
+        eg : (5**2)
+
+==  : it check onlly value of value are same than it return true result.
+=== : it check both value as well as its datatype if both are same then and only the it return true value.
+
+
+*Hoisting   : it is Javascript default behaviour which moves variable and function declaration at top of page .means we can use variable before declaration of it
+
+* difference between var , let , const
+
+Var :
+    - it supports Hoisting concept.
+    - we can use variable before declaration of it.
+    - we can re-declare it.
+
+let :
+    - it does't support Hoisting concept.
+    - we can't use variable before declarationof its.
+    - we can't re-declare it.
+
+const :
+    - It is use to create variablewith constant value.
+    - when we declare constant variable at same time we have to intialized it.
+    - constant variable valuewill never change on run time.
+
+
+*Math method    : it is use to perform methematicle operation.
+                - provide inbuilt method
+                Math.ceil
+ƒ ceil() { [native code] }
+Math.ceil(4.1)  => 5
+Math.floor(4.9) => 4
+Math.round(5.5) => 6
+Math.random() => 0.365969974937552
+Math.random(0,100) => 0.6329235965677253
+Math.round(Math.random()) => 0
+Math.round(Math.random()*10) => 2
+Math.round(Math.random()*100) => 62
+
+*String and its method 
+    - it is collection of character .
+    - in string every letter has index number.
+    - character index from zero index.
+    - in string blank space is also consider string.
+
+*how to find index of searching string
+    1. indexOf("searching string",index?);
+        - it will return indexOf first occurenses of searching string.
+        - it will search string from left to right direction.
+        - if searching string not found then it return -1 result.
+
+    2. lastIndexOf("searching string",index?);
+        - it will return indexOf last occurenses of searching string.
+        - it will search string from right to left direction.
+        - if searching string not found then it return -1 result.
+
+    3. Search("searching string");
+       - it will return indexOf first occurenses of searching string.
+        - it will search string from left to right direction.
+        - if searching string not found then it return -1 result.
+        - it is faster than indexOf() method.
+
+*how to find part of string from big string
+                include         exclude
+    4. slice(start-index , end-index?);
+        - it will return partial part of string from index number.
+        - slice method will search string from left to right when we pass +index
+        - slice method will search string from right to left when we pass -index
+
+    5. substring("start-index" , "end-index"?);
+
+
+    6. substr(start-index , totalcount?);
+
+    7. split(seperate) : it it use to converting string to array
+    

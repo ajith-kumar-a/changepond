@@ -1,0 +1,146 @@
+5 / 6 / 24
+
+*Css :
+- it is use to design website or webapp
+- it makes web app attractive, responsive.
+- latest version CSS3
+- CSS stands for Cascading Style Sheet.
+
+Q. What are types of CSS ?
+Q.How many ways you can use CSS?
+
+    => there are three ways to use CSS.
+    1. inline CSS   : in starting tag we write style attribute with property and value.
+
+    2. Internal CSS : in html file we use style tag and in that we write css code.
+                        -syntax : selector{
+                            property : value;
+                            property : value;
+                        }
+
+    3. External CSS : in this we create a seperate css file and that css file and that css file we imoport in html file by using link tag
+                        -syntax : selector{
+                            property : value;
+                            property : value;
+                        }
+
+    * Selector in CSS   : selecting an element
+        1. element selector     : in this we use element name to apply css property
+        2. group selector       : we can make a group of selector name
+        3. id selector (#)      : when we have apply css property to single element only.
+        4. class selector(.)    : when we have to appply bunch of css property to multiple element
+        5. universal selector   : it apply css property to all element available in web page.
+
+
+* How t use inspect element  : ctl+ shift +i
+* Broder property
+* Border Radius
+
+*Box Model
+    1. Content  : it can be any text or image.
+    2. Padding  : it is use to clear area between content and element border.
+    3. Border   : a line drawn around an element.
+    4. Margin   : it is use to clear area abound element outside border
+
+*Position       : it is use to move element after appling left, right, top, bottom, value.
+                -  because every element has by default position : static thats why element will never move aafter      applying left,right, top, botto, value.
+position : static ; default
+position : relative ; // element can move by using left, right, top and bottom value.
+position : absolute; when we want child element must move according its parent element.
+           in this case parent element must have position : relative and child element
+           must have position : absolute
+position : fixed when you have to fix element on view port (Screen);
+position : sticky ; it is use to stick element to screen broder.
+
+z-index : it is use to decise stack priority of an element
+          it has two value 1 and -1
+          1 means high priority
+          -1 means low priority
+
+*hover : it is psudo 
+
+
+=========================================================================================================================================================================================
+
+6 / 6 / 2024
+
+Background Image property
+*Opacity it is use to make background transparant .
+    - it value vary in between 0 & 1.
+
+*visibility : hidden; Element will hidden but space will be never occupied by adjecent element
+*display    : none; Element will hidden but space will be occupied by adjecent element
+
+display : block ;       - it is use to convert inline element to block
+display : inline ;      - it is use to convert block element to inline
+display : inline-block; - it is use when you have apply height and width to inline element
+
+*float  : it is use to float element either left or right direction , we can use both inline and block element
+float   : right
+float   : left
+float   : none
+float   : inherit
+
+*OverFlow   : it is use to fit big content into small area , it use for only block element 
+    OverFlow : visible  : default
+    OverFlow : hidden   : outside content will be hidden
+    OverFlow : scroll   : it will add scroll bar
+    OverFlow : auto     : it will add scrollbar when it is necessary
+
+Navigation Bar  : it is collection of links , which allows us to redirect another location 
+    1. Vertical NavBar      : 
+    2. Horizontal NavBar    : 
+
+pseudo class    : these are inbuild classes provided by css to us
+    1. Link, Visted, Hover, Action.
+
+*Combinator : it tells relation between selector
+    1.descentdant selector(space)   :
+    2.child selector (>)            :
+    3.adjacent sibiling selector(+) :
+    4.general sibiling selector(~)  :
+
+*Box-Sizing : it include element padding and broder size in its actual width.
+
+*MediaQuery : it is use to apply different styly rule to an element according to different screen width.
+
+    syntax: @media screen and (breakpoint){
+        css property for selector or element.
+    }
+
+- max-width : css property will be applicable till its maximum define width;
+- min-width : css property will be applicable from its minimum width to above;
+
+screen width  >= 1200px : xl screen
+screen width  >= 992px  : l screen
+screen width  >= 768px  : m screen
+screen width  >= 576px  : s screen
+screen width  <  576px  : xsm screen
+
+
+*display-flex   : it is use to manage child element inside parent element accroding to different screen width.
+                - in this parent element must have display : flex property.
+
+*how to center element by using flex.
+*how to design login 
+
+
+to get center of element
+
+    height : 100vh;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+
+
+
+
+
+
+
+
+
+
+
+
+

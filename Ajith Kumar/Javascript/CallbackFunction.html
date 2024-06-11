@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call back function</title>
+</head>
+<body>
+
+    <button type="button" id="btn" class="btn-1" onclick="ch(`i`)">name</button>
+    <button type="button" id="btn" class="btn-1" onclick="ch(`j`)">Ajith</button>
+
+    <script>
+
+        function ch(name){
+            
+            console.log(name);
+        }
+
+        function greeting(){
+            return "Good AfterNoon All <br>";
+        }
+
+        function welcome(company, greeting){
+            console.log(document.getElementById("btn").innerHTML)
+            return `welcome you all in ${company} <br> ${greeting()}`;
+        }
+
+        document.write(welcome("Chengepond",greeting));
+
+
+        // use of setTimeOut
+        setTimeout(() =>{
+            window.alert("it will execute after 2 second")
+        },2000);
+
+        let count = 0;
+        setInterval(() => {
+            // console.log(count++);
+        }, 1000);
+    </script>
+</body>
+</html>

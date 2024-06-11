@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        // object data type.
+
+        let person = {id:101,
+             name : "Ajith" , 
+             contact : 9845678,
+                addres:{
+                     city:"Chennai",
+                     pin : 603203,
+                     state : "Tamil Namdu"
+
+                        },
+                details :  () => `Id : ${this.id} Name : ${this.name} Address:`
+                };
+
+        document.write(`Id :${person.id} Name : ${person.name} Contact : ${person.contact} 
+                        city ${person.addres.city} pin : ${person.addres.pin} details : ${person.details()}`);
+
+
+
+            // how to manipulate object data
+
+            person.name = "Ajith Kumar"
+
+    </script>
+    
+</body>
+</html>

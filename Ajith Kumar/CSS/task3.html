@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div{
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            width: 400px;
+            border: 2px solid ;
+            text-shadow: 2px 3px 3px black;
+            text-transform: uppercase;
+            box-shadow: 3px 3px 5px blue;
+        }
+
+        .child{
+            
+           display: none;
+        }
+
+        .parent:hover .child{
+            color: blue;
+            display: block;
+        }
+
+        .box{
+            width: 800px;
+            padding: 10px;
+            border-width: 10px;
+            text-transform: uppercase;
+            box-shadow: 3px 3px 5px blue;
+        }
+        .box-sh{
+            width: 800px;
+            text-transform: uppercase;
+            box-shadow: 3px 3px 5px blue;
+            box-sizing: border-box;
+        }
+        
+        
+        
+
+
+    </style>
+</head>
+
+<body>
+    <center>
+    <div class="parent">
+        hover on me
+        <br>
+        <div class="child">
+            Welcome to Changepond
+        </div>
+    </div>
+</center>
+
+<div class="box">
+
+    Ajith Kumar with 800px normal
+
+</div>
+
+<div class="box-sh">
+
+    Ajith Kumar with 800px box--sizing
+
+</div>
+
+</body>
+
+</html>

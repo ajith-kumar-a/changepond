@@ -1,0 +1,119 @@
+04 / 06 / 2024
+
+* HTML
+ - it is use to create structure of webpage or website.
+ - it is use to display data to user on browser 
+ - it is tag basis language.
+ - it is Hypertext Markup Language.
+ - it latest Version is HTML5
+
+ What is tag ?
+ <tag> 
+ - in HTML we have two type of tage
+ 1. paired tag      : <startTag> content </endTag>
+ 2. unpaired tag    : <singleTag>
+
+ - to display all information fo that we have tag
+
+ step to create html file
+
+ step 1. create HTML file by writing fileName.html
+ step 2. write code.
+ step 3. execute file on browser.
+
+ <!DOCTYPE html> : it tells search engine it html of document belong to html version 5
+ head : it contain external link and meta data in it.
+ body : it is use to display data or information on browser.
+
+ * ELEMENT :
+ <startTag attribute = "value" > content or information </endTag>
+ attribute : it will gives us additional information about tag.
+    - it will comes in key value paired formate.
+    - it always write in starting tag
+
+*In HTML we have two types of ELEMENT:
+1. Block Element: - the Element which takes 100% width of its screen.
+                  - and it always start on new Line
+                  - ex : h1 - h6, p, ol, ul, table, form...
+
+2. Inline Element: - the Element will takes required width of it.
+                   - it will never statrt on new line.
+                   - ex : b, i, u, img, a...
+
+meta tag : it provide information about data.
+
+- List : it is collection of items
+- ion html we have three types of List
+    1. Ordered List(ol,li)      : types : Number, a,b,c, A,B,C, I,II,III, i,ii,iii.
+    2. Unordered List(ul,li)    : types : disc, circul, square, none.
+    3. Discription List         : it contain three tag, it introduce in HTML5
+                             dl : discription list.
+                             dt : define term
+                             dd : define description
+
+
+
+Q. What is difference between html and HTML5 ?
+Q. What are feature of HTML5?
+
+    - Symantic Element introduce    : - the Element which has specific meaning.
+                                      - ex : header, footer, nav, section, address,
+    - New Input type, new Tag and attribute introduce :
+    - Multimedia Element introduce  : we can add audio and video file in web page 
+    - HTML API introduce            : 
+        1. Geolocation              : it return user current position, for this in your system GPS must be there
+        2. Drag and Drop            : grabing an object from one location and drag and another place
+*important* 3. web-worker           : it is small js code which excute at backend of web application, without affecting its current excution.
+        4. webstroage               : it is use to store user data on browser.
+            - local storage         : it is user to store user dada for permanantly.
+            - session stroage       : it is use to store user data for limitesd time
+        5. SSE(Server Sent Event)   : it allows user to get automatic update from server.
+
+
+Q. why there is a nessesity to introduce symantic Element ?
+    in old HTML ther are where no symantic element so developer use there own naming convention for the 
+    website these makes dificult for the search engine to identify current content in website or web application
+    thats why symantic elementwill introduce it helps both search engine and developer to identify currect content in to you web application
+
+
+* How to insert images by relative path
+* hoe to insert video
+* How to insert Audio file
+
+* iframe : it is use to create small window on browser.
+        1. we can insert Google map location in web page
+            step1. search location on google Map
+            step2. click on shared => embed a map => copy url.
+            step3. past url in webpage
+            
+        2. we can insert youtube video
+        3. insert one website into another website
+
+
+
+========================================================================================================================
+5 / 6 /24
+
+Link : to redirect from one page to another.
+     - in html we use anchore tag to create link.
+
+*table  : it is collection of rows column
+
+    table :
+    th    => table heading.
+    tr    => table row.
+    td    => table data.
+
+note    : in table first we create row and then column
+
+*Form   : it is use to get data from user
+ button : button, submit, reset, menu
+
+ *To submit from data we have to method
+    -get : - when our aim is to create simple and small from
+           - WE DO NOT SUBMIT ESSENTIAL data
+           - user data will be vissible on browser url.
+           - browser url has character limitation.
+    -post: - when our aim is to submit confidential data.
+           - data will be not vissible to user.
+           - there is no character limitation.

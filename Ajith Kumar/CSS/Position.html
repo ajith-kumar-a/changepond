@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+        header {
+            background-color: aliceblue;
+            border-bottom: 2px solid darkorange;
+            padding: 20px;
+            position: sticky;
+            z-index: 1;
+            top: 0px;
+        }
+
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid blue;
+            vertical-align: middle;
+            margin: 10px;
+
+        }
+
+        .title {
+            font-size: 40px;
+            color: blue;
+            font-weight: 600;
+            text-shadow: 3px 3px 3px #2196F3;
+        }
+
+        .pos-rel {
+            border: solid blue 2px;
+            width: 500px;
+            left: 20%;
+            position: relative;
+            color: darkorange;
+        }
+
+        .parent {
+            border: solid 2px gray;
+            width: 500px;
+            height: 300px;
+            left: 20%;
+            position: relative;
+        }
+
+        .parent2 {
+            border: 2px dotted blue;
+            width: 80%;
+            height: 80%;
+            left: 10%;
+            position: absolute;
+            top: 10%;
+        }
+
+        .child {
+            border: 2px solid green;
+            left: 10%;
+            position: absolute;
+            width: 80%;
+            top: 10%;
+        }
+
+        .img-fix {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .img-fix:hover {
+            width: 150px;
+            height: 150px;
+
+        }
+
+        .fixed {
+            width: 150px;
+            position: fixed;
+            top: 30%;
+
+        }
+
+        p {
+            color: blue;
+        }
+
+        .hover-ex {
+            font-size: 20px;
+            text-align: center;
+            color: red;
+            font-weight: 500;
+        }
+
+        .hover-ex:hover {
+            FONT-SIZE: 50px;
+            color: gray;
+            background-color: yellow;
+            border: 2px solid blue;
+            width: 500px;
+            position: relative;
+            left: 20%;
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <img class="logo" src="../assect/image/Ash.jfif" alt="ASH">
+        <span class=title> Pokemon </span>
+
+    </header>
+
+    <p class="pos-rel">Pokémon
+        Pokémon is a Japanese media franchise consisting of video games, animated series and films, a trading card game,
+        and other related media. The following list details the 151 Pokémon of generation I in order of their National
+        Pokédex number. The first Pokémon, Bulbasaur, is number 0001 and the last, Mew, is number 0151.
+    </p>
+
+    <br><br><br><br>
+    <hr>
+
+    <div class="parent">
+        this is parent element
+
+        <div class="parent2 ">
+            this is child element
+
+            <div class="child">
+                another child
+            </div>
+        </div>
+    </div>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, facilis explicabo maiores eius sequi odit minus
+        sit officia magni itaque iusto reiciendis velit saepe modi, ducimus tempore at enim quasi! Ipsa beatae
+        voluptatum excepturi maiores cum atque quibusdam, sunt iste nisi obcaecati in odio. Rerum consequatur ut
+        ratione, iste itaque deserunt praesentium quisquam quidem reiciendis unde provident minima autem, repellat,
+        porro assumenda quaerat perspiciatis! Nesciunt asperiores quas ullam, eveniet deleniti, explicabo excepturi et
+        animi cum repellendus aliquam, in adipisci dolores ipsam pariatur unde voluptatem obcaecati vel. Provident
+        expedita praesentium eligendi tenetur accusantium officiis sunt, perspiciatis nisi reprehenderit, a quasi iste.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, facilis explicabo maiores eius sequi odit minus
+        sit officia magni itaque iusto reiciendis velit saepe modi, ducimus tempore at enim quasi! Ipsa beatae
+        voluptatum excepturi maiores cum atque quibusdam, sunt iste nisi obcaecati in odio. Rerum consequatur ut
+        ratione, iste itaque deserunt praesentium quisquam quidem reiciendis unde provident minima autem, repellat,
+        porro assumenda quaerat perspiciatis! Nesciunt asperiores quas ullam, eveniet deleniti, explicabo excepturi et
+        animi cum repellendus aliquam, in adipisci dolores ipsam pariatur unde voluptatem obcaecati vel. Provident
+        expedita praesentium eligendi tenetur accusantium officiis sunt, perspiciatis nisi reprehenderit, a quasi iste.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, facilis explicabo maiores eius sequi odit minus
+        sit officia magni itaque iusto reiciendis velit saepe modi, ducimus tempore at enim quasi! Ipsa beatae
+        voluptatum excepturi maiores cum atque quibusdam, sunt iste nisi obcaecati in odio. Rerum consequatur ut
+        ratione, iste itaque deserunt praesentium quisquam quidem reiciendis unde provident minima autem, repellat,
+        porro assumenda quaerat perspiciatis! Nesciunt asperiores quas ullam, eveniet deleniti, explicabo excepturi et
+        animi cum repellendus aliquam, in adipisci dolores ipsam pariatur unde voluptatem obcaecati vel. Provident
+        expedita praesentium eligendi tenetur accusantium officiis sunt, perspiciatis nisi reprehenderit, a quasi iste.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, facilis explicabo maiores eius sequi odit minus
+        sit officia magni itaque iusto reiciendis velit saepe modi, ducimus tempore at enim quasi! Ipsa beatae
+        voluptatum excepturi maiores cum atque quibusdam, sunt iste nisi obcaecati in odio. Rerum consequatur ut
+        ratione, iste itaque deserunt praesentium quisquam quidem reiciendis unde provident minima autem, repellat,
+        porro assumenda quaerat perspiciatis! Nesciunt asperiores quas ullam, eveniet deleniti, explicabo excepturi et
+        animi cum repellendus aliquam, in adipisci dolores ipsam pariatur unde voluptatem obcaecati vel. Provident
+        expedita praesentium eligendi tenetur accusantium officiis sunt, perspiciatis nisi reprehenderit, a quasi iste.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, facilis explicabo maiores eius sequi odit minus
+        sit officia magni itaque iusto reiciendis velit saepe modi, ducimus tempore at enim quasi! Ipsa beatae
+        voluptatum excepturi maiores cum atque quibusdam, sunt iste nisi obcaecati in odio. Rerum consequatur ut
+        ratione, iste itaque deserunt praesentium quisquam quidem reiciendis unde provident minima autem, repellat,
+        porro assumenda quaerat perspiciatis! Nesciunt asperiores quas ullam, eveniet deleniti, explicabo excepturi et
+        animi cum repellendus aliquam, in adipisci dolores ipsam pariatur unde voluptatem obcaecati vel. Provident
+        expedita praesentium eligendi tenetur accusantium officiis sunt, perspiciatis nisi reprehenderit, a quasi iste.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, facilis explicabo maiores eius sequi odit minus
+        sit officia magni itaque iusto reiciendis velit saepe modi, ducimus tempore at enim quasi! Ipsa beatae
+        voluptatum excepturi maiores cum atque quibusdam, sunt iste nisi obcaecati in odio. Rerum consequatur ut
+        ratione, iste itaque deserunt praesentium quisquam quidem reiciendis unde provident minima autem, repellat,
+        porro assumenda quaerat perspiciatis! Nesciunt asperiores quas ullam, eveniet deleniti, explicabo excepturi et
+        animi cum repellendus aliquam, in adipisci dolores ipsam pariatur unde voluptatem obcaecati vel. Provident
+        expedita praesentium eligendi tenetur accusantium officiis sunt, perspiciatis nisi reprehenderit, a quasi iste.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, facilis explicabo maiores eius sequi odit minus
+        sit officia magni itaque iusto reiciendis velit saepe modi, ducimus tempore at enim quasi! Ipsa beatae
+        voluptatum excepturi maiores cum atque quibusdam, sunt iste nisi obcaecati in odio. Rerum consequatur ut
+        ratione, iste itaque deserunt praesentium quisquam quidem reiciendis unde provident minima autem, repellat,
+        porro assumenda quaerat perspiciatis! Nesciunt asperiores quas ullam, eveniet deleniti, explicabo excepturi et
+        animi cum repellendus aliquam, in adipisci dolores ipsam pariatur unde voluptatem obcaecati vel. Provident
+        expedita praesentium eligendi tenetur accusantium officiis sunt, perspiciatis nisi reprehenderit, a quasi iste.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, facilis explicabo maiores eius sequi odit minus
+        sit officia magni itaque iusto reiciendis velit saepe modi, ducimus tempore at enim quasi! Ipsa beatae
+        voluptatum excepturi maiores cum atque quibusdam, sunt iste nisi obcaecati in odio. Rerum consequatur ut
+        ratione, iste itaque deserunt praesentium quisquam quidem reiciendis unde provident minima autem, repellat,
+        porro assumenda quaerat perspiciatis! Nesciunt asperiores quas ullam, eveniet deleniti, explicabo excepturi et
+        animi cum repellendus aliquam, in adipisci dolores ipsam pariatur unde voluptatem obcaecati vel. Provident
+        expedita praesentium eligendi tenetur accusantium officiis sunt, perspiciatis nisi reprehenderit, a quasi iste.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, facilis explicabo maiores eius sequi odit minus
+        sit officia magni itaque iusto reiciendis velit saepe modi, ducimus tempore at enim quasi! Ipsa beatae
+        voluptatum excepturi maiores cum atque quibusdam, sunt iste nisi obcaecati in odio. Rerum consequatur ut
+        ratione, iste itaque deserunt praesentium quisquam quidem reiciendis unde provident minima autem, repellat,
+        porro assumenda quaerat perspiciatis! Nesciunt asperiores quas ullam, eveniet deleniti, explicabo excepturi et
+        animi cum repellendus aliquam, in adipisci dolores ipsam pariatur unde voluptatem obcaecati vel. Provident
+        expedita praesentium eligendi tenetur accusantium officiis sunt, perspiciatis nisi reprehenderit, a quasi iste.
+    </p>
+
+
+    <div class="fixed">
+        <img class="img-fix" src="../assect/image/charizad.jfif" alt="charizad">
+        <img class="img-fix" src="../assect/image/charmendal.jfif" alt="charmendal">
+        <img class="img-fix" src="../assect/image/pickachu.jfif" alt="pickachu">
+    </div>
+
+    <div class="hover-ex">
+        Ajith
+    </div>
+
+</body>
+
+</html>

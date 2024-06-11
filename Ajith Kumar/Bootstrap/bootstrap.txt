@@ -1,0 +1,59 @@
+7 /6 / 24
+
+Bootstrap : - it is combition of html , css and js framework
+            - which is use to make web app attractive, responsive and mobile friendly
+            - it provide inbuilt classes
+            - lastest version of Bootstrapis 5
+
+
+*there are two way to use Bootstrap
+    1. By using CDN Link(Content Delivery Network) Link:
+    2. By Downloading
+
+    * Official website Bootstrap is 
+       -  getbootstrap.com
+
+Heading class in Bootstrap
+display-1 to display-6
+
+Q. How to copy and use CDN Link
+    -Heading class : .display-1 to .display-6;
+
+                   : .container         : it apply 15px margin from left and right side of an element.
+                   : .container-fluid   : it will take full width of screen .
+
+        Note  : above two classes use to wrap element or Content.
+
+* Color classes     : 
+    .text-danger, .text-warning, text-sucess........
+    .bg-danger, .bg-primary, .bg-warning.......
+
+*chainning of classes   : we can write multiple classes together
+
+*Table classes
+*Button classes
+*Spinner-border
+*spinner-grow
+
+.rounded, .rounded-circle, .img-thumbnail
+
+*Card classes.
+
+*Bootstrap Grid : 
+    - it is use to manage element layout according to different screen width.
+    - in Bootstrap grid we use 2 classes
+            1. .row class 
+            2. col class
+    - imp Note : in Bootstrap grid in single row w display multiple column with size 12 only.
+        - if column size is greater than 12 then next olumn will start from new row.
+
+*How to use piece of code from website sample
+*use of carousel
+*use of header and footer 
+
+*Assignment on html, Css,and Bootstrap
+create Design Jwellery website
+    -Pages : Home, About,Jwellery,Contact
+        1. Website must attractive and responsive
+        2. Good Quality image
+        3. use symantic element

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+        // 1. Simple Function
+        function greeting(){
+            return "GOOD MORNING AJITHKUMAR";
+        }
+
+        let greet = greeting();
+
+        document.write(greet, "<br>");
+        document.write(greeting(), "<br>");
+
+
+        function wel(st1 , st2, st3){
+            return `welcome ${st1} ${st2} ${st3}`;
+        }
+
+        document.write(wel("Ajith", "Kumar", "A"),"<br>");
+
+        //3. anonymous function: function whithout no name is called anonymous function 
+
+        let add = function (){
+            return 100+100;
+        }
+
+        document.write(add(),"<br>");
+
+        let add1 = function (num1 , num2){
+            return num1+num2;
+        }
+
+        document.write(add(500,800),"<br>");
+
+        //4. arrow function : function with no name and no function keyword is called arrow function with arrow symbol( => ) after parenthesis
+
+          let sub =  ()=>{
+                return 500-100;
+            }
+
+            document.write(sub(),"<br>");
+
+          let sub1 =  (num1,num2)=>{
+                return num1-num2;
+            }
+
+            document.write(sub1(100,90),"<br>");
+
+          let sub2 =  (num1,num2) => num1-num2;
+
+            document.write(sub2(100,90),"<br>");
+
+        // 5. Optional Parameterize function : when parameter is optional in function it is called optional parameterize function. it always write at last with default value in paranthesis.
+
+         let fullName = (fname,lname,mname="",addres ="chennai") => {
+            return `${fname} ${mname} ${lname} Address :${addres}`;
+         }
+
+         document.write(fullName("Ajith","Avudayappan"),"<br>");
+
+         //6. Rest Parameterize Function : when we don't know how many patermeters are required in function in that case we use it. in this we use spread opeator(...)
+
+         let restParameter = (...std) => {
+            return "std"
+         }
+
+         document.write(restParameter("Ajith","Kumar","A"),"<br>");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grandFather p{
+            background-color: aliceblue;
+            color: blue;
+            font-size: large;
+        }
+
+        .grandFather > p{
+            color: red;
+        }
+
+        .grandFather + .child1{
+            font-size: xx-large;
+            color: yellow;
+        }
+
+        .grandFather ~ .child1{       
+            background-color: blueviolet;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="grandFather">
+        <p class="child1"> 1</p>
+        <p class="child1"> 2</p>
+        <p class="child1"> 3</p>
+        <p class="child1"> 4</p>
+        <div><p class="child1"> Grand Son</p></div>
+        <p class="child1"> 5</p>
+    </div>
+
+    <p class="child1"> nearest friend</p>
+    <p class="child1"> Outside Friend</p>
+    <p class="child1"> Outside Friend</p>
+    
+    
+</body>
+</html>

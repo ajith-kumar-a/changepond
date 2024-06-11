@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image</title>
+</head>
+<body>
+    <h1>Java Script Task - 4</h1>
+
+    <img src="../assect/image/Ash.jfif" id="img-1" alt="ASH" height="300px" width="300px"> <br>
+    <strong id="imgName">ASH</strong><br>
+    <button type="button" onclick="changeImage()"> change Image </button>
+    
+
+<br><br><br>
+<h1>Java Script Task - 5</h1><br>
+    <img src="../assect/image/meo.jfif" id="img-2" alt="Charizad"  height="300px" width="300px"><br>
+    <strong id="img-name">Charizad</strong><br>
+
+    <button type="button"  onclick="chImg(`ASH`)">ASH</button>
+    <button type="button"  onclick="chImg(`Charizad`)">Charizad</button>
+    <button type="button"  onclick="chImg(`Blastoise`)">Blastoise</button>
+    <button type="button"  onclick="chImg(`charmendal`)">charmendal</button>
+    <button type="button"  onclick="chImg(`meo`)">meo</button>
+
+
+    <script>
+
+        function chImg(name) {
+            console.log(name);
+
+            if(name == "Charizad"){
+                document.getElementById("img-2").src = "../assect/image/charizad.jfif";
+                document.getElementById("img-name").innerHTML = "Charizard";
+            }else if(name == "ASH"){
+                document.getElementById("img-2").src = "../assect/image/Ash.jfif";
+                document.getElementById("img-name").innerHTML = "ASH";
+            }else if(name == "Blastoise"){
+                document.getElementById("img-2").src = "../assect/image/Blastoise.jfif";
+                document.getElementById("img-name").innerHTML = "Blastoise";
+            }else if(name == "charmendal"){
+                document.getElementById("img-2").src = "../assect/image/charmendal.jfif";
+                document.getElementById("img-name").innerHTML = "charmendal";
+            }else if(name == "meo"){
+                document.getElementById("img-2").src = "../assect/image/meo.jfif";
+                document.getElementById("img-name").innerHTML = "meo";
+            }
+
+        }
+
+
+
+
+        function changeImage(){
+
+            let name = document.getElementById("imgName").innerHTML;
+
+            if(name == "ASH"){
+
+                document.getElementById("img-1").src = "../assect/image/CharizardGif.jfif";
+                document.getElementById("imgName").innerHTML = "Charizard";
+
+            }else{
+
+                document.getElementById("img-1").src = "../assect/image/ASH.jfif";
+                document.getElementById("imgName").innerHTML = "ASH";
+            }
+        }
+
+    </script>
+</body>
+</html>

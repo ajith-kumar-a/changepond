@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let courses = ["React", "Angular","Java","Python"];
+
+        console.log
+
+        // for of : it will return values.
+        for(let course of courses){
+            document.write(course," , ")
+        }
+
+        // for in : it will return array index
+        for(let course in courses)
+            document.write(course," , ");
+
+
+        //1. push(); it allows us to insert data at last index of an array.
+        courses.push("NodeJs");
+        document.write(courses," , ");
+
+        //2. pop() : it is use top remove values from last index of an array, it remove single value at a time
+        courses.pop();
+        document.write(courses," , ");
+        // 3. unshift() : it allows us to insert data at starting index of an array.
+        courses.unshift("HTML");
+        document.write(courses," , ");
+        // 4.shift() : it is use to remove values from starting index of an array , it removes single value at 
+        courses.shift();
+        document.write(courses," , ");
+        // 5. splic(startIndex,deleteCount,dataInsert) : it allows us to add and remove values from middle index of an array,
+        courses.splice(3,0,"SASS","TypeScript");  // it will add 2 values from 3rd index
+        document.write(courses," , ");
+        courses.splice(3,2) // it will remove two values from 3rd index.
+        document.write(courses," , ");
+        courses.splice(2,1,"Wordpress","Digital Marketing");
+        document.write(courses," , ");
+
+        // 6. toString() : it converts array data into string
+        console.log(courses.toString());
+
+        // 7.  join(seperate) : it converts array data into string data, it take one parameter to seperate data
+        console.log(courses.join(" "))
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+
+    <style>
+        .clock {
+            border: 2px solid blue;
+            width: 500px;
+            height: 300px;
+            margin: auto;
+            display: flex;
+            background-color: black;
+        }
+
+        #d3 {
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            margin: auto;
+            display: flex;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 4px 3px 87px orange;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="d1"></div>
+    <div id="d2"></div>
+
+    <h2>Java Script Task - 6 </h2>
+    
+    <div class="clock">
+        
+        <div id="d3"></div>
+    </div>
+
+    <h2>Java Script Task - 7</h2>
+
+
+
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <div id="d8"></div>
+
+
+
+    <script>
+        let dateObj = new Date();
+
+        // task -7 month 
+
+
+        function changeMonth(month) {
+
+            switch (month) {
+
+                case 0: document.getElementById("d4").innerHTML = "Jan";
+                    break;
+                case 1: document.getElementById("d4").innerHTML = "Feb";
+                    break;
+                case 2: document.getElementById("d4").innerHTML = "Mar";
+                    break;
+                case 3: document.getElementById("d4").innerHTML = "April";
+                    break;
+                case 4: document.getElementById("d4").innerHTML = "May";
+                    break;
+                case 5: document.getElementById("d4").innerHTML = "June";
+                    break;
+                case 6: document.getElementById("d4").innerHTML = "July";
+                    break;
+                case 7: document.getElementById("d4").innerHTML = "Aug";
+                    break;
+                case 8: document.getElementById("d4").innerHTML = "Sep";
+                    break;
+                case 9: document.getElementById("d4").innerHTML = "Oct";
+                    break;
+                case 10: document.getElementById("d4").innerHTML = "Nov";
+                    break;
+                case 11: document.getElementById("d4").innerHTML = "Dec";
+                    break;
+
+            }
+        }
+
+        let month = dateObj.getMonth();
+
+        console.log(month)
+
+
+        changeMonth(month);
+
+
+        // how to create object of date
+
+
+
+        document.getElementById("d1").innerHTML = dateObj.getDate();
+
+
+        // set date 
+
+        let date = new Date("2001", "02", "10");
+        document.getElementById("d2").innerHTML = date;
+
+        function myclock() {
+            let mytime = new Date();
+            document.getElementById("d3").innerHTML = mytime.toLocaleTimeString();
+        }
+
+        setInterval(myclock, 1000);
+
+    </script>
+
+</body>
+
+</html>
